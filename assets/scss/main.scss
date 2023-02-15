@@ -1,0 +1,38 @@
+$primary-color: #ff0000;
+
+body {
+    background-image: url(../assets/millenium.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.card {
+    border: 1px solid $primary-color;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffcccc;
+    box-shadow: inset 0px 0px 0px 2px red;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+}
+
+.btn-secondary,
+.btn-success {
+    color: white;
+}
+
+.plain-text,
+.big-text {
+    background-color: #ffcccc;
+    color: firebrick;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    padding: 20px;
+    display: inline-block;
+    box-shadow: inset 0px 0px 0px 2px red;
+}
+
+.card-title {
+    color: red;
+}

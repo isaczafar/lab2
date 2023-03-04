@@ -7,10 +7,11 @@
       <span class="card-title card-name">{{ name }}</span>
       <p>{{ type }}</p>
       <p>{{ desc }}</p>
+      <input v-model="inputValue" type="text">
+      <p>Input Value: {{ inputValue }}</p>
     </div>
   </div>
 </template>
-
 
 <script>
 export default {
@@ -28,7 +29,6 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .card {
   margin: 20px;
@@ -38,17 +38,14 @@ export default {
   width: 200px;
   height: 300px;
 }
-
 .card-image {
   height: 50%;
 }
-
 .card-image img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
-
 .card-content {
   color: white;
   height: 50%;
@@ -56,14 +53,12 @@ export default {
   flex-direction: column;
   justify-content: space-around;
 }
-
 .card-title {
   font-size: 1.2rem;
   font-weight: bold;
   color: white !important;
   margin-bottom: 0.5rem;
 }
-
 .card-name {
   color: white;
 }

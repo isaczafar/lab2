@@ -29,7 +29,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .card {
   margin: 20px;
   padding: 20px;
@@ -37,29 +37,35 @@ export default {
   box-shadow: 2px 2px #ccc;
   width: 200px;
   height: 300px;
-}
-.card-image {
-  height: 50%;
-}
-.card-image img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-.card-content {
-  color: white;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: white !important;
-  margin-bottom: 0.5rem;
-}
-.card-name {
-  color: white;
+
+  .card-image {
+    height: 50%;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .card-content {
+    color: white;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white !important;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-name {
+      color: white;
+    }
+  }
 }
 </style>
+
